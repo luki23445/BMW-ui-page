@@ -34,7 +34,6 @@ nav {
   z-index: 33;
   height: 100px;
   width: 100%;
-  /* background-color: aliceblue; */
   position: fixed;
   transition: 1s ease;
 }
@@ -74,19 +73,16 @@ a {
   height: 40px;
   padding-top: 10px;
   text-decoration: none;
-  /* color: #b9babe; */
   color: var(--kolor-tekstu-a);
 }
 
 h1 {
   font-size: 80px;
-  /* color: aliceblue; */
   color: var(--kolor-tekstu-h1);
   font-weight: bold;
 }
 
 p {
-  /* color: #b9babe; */
   color: var(--kolor-tekstu-p);
 }
 
@@ -138,18 +134,16 @@ button:hover {
   background-repeat: no-repeat;
   aspect-ratio: 1 / 1;
   width: 70px;
-  /* height: 80px; */
   margin: 15px 25px;
 }
 
 #heder {
-  /* background-color: aqua; */
   width: 45%;
   padding: 8% 5%;
 }
 
 #sekcja_1 {
-  background-image: url(bmw-tlo.jpg);
+  background-image: url(./bmw-tlo.jpg);
   background-size: 100%;
   width: 100%;
   aspect-ratio: 16 / 10;
@@ -170,14 +164,11 @@ button:hover {
   padding: 200px 20px;
   display: flex;
   flex-wrap: wrap;
-  /* font-size: 30px; */
   text-align: center;
 }
 
 #img {
   flex: 40%;
-  /* background: url(bmw-z8-1905717.jpg); */
-  /* background-size: 100%; */
 }
 
 aside {
@@ -191,14 +182,12 @@ aside h2 {
 
 aside p {
   text-align: left;
-  /* margin-top:; */
 }
 
 #sekcja_3 {
   margin-top: 100px;
   width: 100%;
   height: 90vh;
-  /* padding: 50px 20px; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -213,27 +202,27 @@ aside p {
 }
 
 .zdj:nth-of-type(1) {
-  background-image: url("bmw1.jpg");
+  background-image: url("./bmw1.jpg");
   background-size: 100%;
 }
 
 .zdj:nth-of-type(2) {
-  background-image: url("bmw2.jpg");
+  background-image: url("./bmw2.jpg");
   background-size: 100%;
 }
 
 .zdj:nth-of-type(3) {
-  background-image: url("bmw3.jpg");
+  background-image: url("./bmw3.jpg");
   background-size: 100%;
 }
 
 .zdj:nth-of-type(4) {
-  background-image: url("bmw4.jpg");
+  background-image: url("./bmw4.jpg");
   background-size: 100%;
 }
 
 .zdj:nth-of-type(5) {
-  background-image: url("bmw5.jpg");
+  background-image: url("./bmw5.jpg");
   background-size: 100%;
 }
 
@@ -242,7 +231,6 @@ aside p {
   max-width: 1200px;
   height: auto;
   padding: 100px;
-
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -252,7 +240,6 @@ aside p {
   z-index: 1;
   all: initial;
   width: 100%;
-
   position: relative;
   background: none;
   border: solid 2px var(--kolor-obramowania);
@@ -277,8 +264,7 @@ aside p {
 
 .stopka {
   display: flex;
-  justify-content: space-around;
-  /* background-color: DodgerBlue; */
+  justify-content: space-around
 }
 
 .stopka>div {
@@ -286,7 +272,6 @@ aside p {
   margin: 10px;
   text-align: center;
   line-height: 50px;
-  /* font-size: 30px; */
 }
 
 .stopka>div>h2 {
