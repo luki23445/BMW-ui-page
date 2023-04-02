@@ -1,6 +1,6 @@
 # BMW ui page
 
-## Przykładowa strona BMW
+## Przykładowa responsywna strona BMW
 
 #### [Link do strony: ](https://luki23445.github.io/BMW-ui-page/)
 
