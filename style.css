@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap");
+
+:root {
+  --kolor-tekstu-h1: #f0f8ff;
+  --kolor-tekstu-h2: #f0f8ff;
+  --kolor-tekstu-h3: #f0f8ff;
+  --kolor-tekstu-p: #b9babe;
+  --kolor-tekstu-a: #b9babe;
+  --kolor-obramowania: #b9babe;
+  --kolor-obramowania-2: #7e0501;
+  --kolor-tekstu-przycisk: #f0f8ff;
+  --kolor-tla: #1e1f23;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: var(--kolor-tla);
+}
+
+nav {
+  z-index: 33;
+  height: 100px;
+  width: 100%;
+  /* background-color: aliceblue; */
+  position: fixed;
+  transition: 1s ease;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
+  float: right;
+}
+
+li {
+  display: inline-flex;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+li:nth-child(1):hover~#div {
+  transform: translateX(0);
+}
+
+li:nth-child(2):hover~#div {
+  transform: translateX(125px);
+}
+
+li:nth-child(3):hover~#div {
+  transform: translateX(250px);
+}
+
+li:nth-child(4):hover~#div {
+  transform: translateX(375px);
+}
+
+a {
+  width: 120px;
+  height: 40px;
+  padding-top: 10px;
+  text-decoration: none;
+  /* color: #b9babe; */
+  color: var(--kolor-tekstu-a);
+}
+
+h1 {
+  font-size: 80px;
+  /* color: aliceblue; */
+  color: var(--kolor-tekstu-h1);
+  font-weight: bold;
+}
+
+p {
+  /* color: #b9babe; */
+  color: var(--kolor-tekstu-p);
+}
+
+h2 {
+  color: var(--kolor-tekstu-h2);
+  font-weight: bold;
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: var(--kolor-tekstu-h3);
+  font-weight: bold;
+}
+
+button {
+  margin-top: 30px;
+  position: relative;
+  background: none;
+  border: solid 2px var(--kolor-obramowania);
+  border-radius: 8px;
+  transition: linear 250ms;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--kolor-tekstu-przycisk);
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+#div {
+  position: absolute;
+  bottom: 30px;
+  height: 2px;
+  width: 80px;
+  margin: 0 20px;
+  background-color: #fff;
+  transition: transform 0.25s;
+}
+
+#logo {
+  float: left;
+  background-image: url(logo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  aspect-ratio: 1 / 1;
+  width: 70px;
+  /* height: 80px; */
+  margin: 15px 25px;
+}
+
+#heder {
+  /* background-color: aqua; */
+  width: 45%;
+  padding: 8% 5%;
+}
+
+#sekcja_1 {
+  background-image: url(bmw-tlo.jpg);
+  background-size: 100%;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-repeat: no-repeat;
+}
+
+.active {
+  backdrop-filter: blur(20px);
+  -webkit-box-shadow: 0px 13px 37px -1px rgb(49, 49, 49);
+  -moz-box-shadow: 0px 13px 37px -1px rgba(49, 49, 49);
+  box-shadow: 0px 13px 37px -1px rgba(49, 49, 49);
+}
+
+
+#sekcja_2 {
+  width: 100%;
+  height: 90vh;
+  padding: 200px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* font-size: 30px; */
+  text-align: center;
+}
+
+#img {
+  flex: 40%;
+  /* background: url(bmw-z8-1905717.jpg); */
+  /* background-size: 100%; */
+}
+
+aside {
+  flex: 40%;
+  padding: 5% 60px;
+}
+
+aside h2 {
+  text-align: left;
+}
+
+aside p {
+  text-align: left;
+  /* margin-top:; */
+}
+
+#sekcja_3 {
+  margin-top: 100px;
+  width: 100%;
+  height: 90vh;
+  /* padding: 50px 20px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.zdj {
+  margin: auto;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  background: white no-repeat center center fixed;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.zdj:nth-of-type(1) {
+  background-image: url("bmw1.jpg");
+  background-size: 100%;
+}
+
+.zdj:nth-of-type(2) {
+  background-image: url("bmw2.jpg");
+  background-size: 100%;
+}
+
+.zdj:nth-of-type(3) {
+  background-image: url("bmw3.jpg");
+  background-size: 100%;
+}
+
+.zdj:nth-of-type(4) {
+  background-image: url("bmw4.jpg");
+  background-size: 100%;
+}
+
+.zdj:nth-of-type(5) {
+  background-image: url("bmw5.jpg");
+  background-size: 100%;
+}
+
+#sekcja_4 {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  padding: 100px;
+
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sekcja_4 .lista {
+  z-index: 1;
+  all: initial;
+  width: 100%;
+
+  position: relative;
+  background: none;
+  border: solid 2px var(--kolor-obramowania);
+  border-radius: 8px 8px 2px 2px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200%;
+  color: var(--kolor-tekstu-przycisk);
+}
+
+.odp {
+  display: none;
+  width: 100.5%;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-left: solid 2px var(--kolor-obramowania);
+  border-right: solid 2px var(--kolor-obramowania);
+  border-bottom: solid 2px var(--kolor-obramowania);
+}
+
+.stopka {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: DodgerBlue; */
+}
+
+.stopka>div {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  /* font-size: 30px; */
+}
+
+.stopka>div>h2 {
+  border-left: solid 2px var(--kolor-obramowania);
+  margin-bottom: 5px;
+}
+
+.stopka>div>hr {
+  width: 100px;
+  color: var(--kolor-obramowania-2);
+  margin: auto;
+  
+}
+
+.stopka>div>p>span {
+  padding: 15px;
+  border-radius: 100% 70%;
+  background-color: #7e0501;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: small;
+  }
+
+  #heder {
+    width: 45%;
+    padding: 10% 5%;
+  }
+
+  #sekcja_2 {
+    height: 90vh;
+    padding: 200px 20px;
+  }
+
+  aside {
+    flex: 40%;
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: small;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    float: right;
+  }
+
+  li {
+    display: inline-flex;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  li:nth-child(1):hover~#div {
+    transform: translateX(0);
+  }
+
+  li:nth-child(2):hover~#div {
+    transform: translateX(65px);
+  }
+
+  li:nth-child(3):hover~#div {
+    transform: translateX(127px);
+  }
+
+  li:nth-child(4):hover~#div {
+    transform: translateX(190px);
+  }
+
+  a {
+    width: 60px;
+    height: 30px;
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: small;
+    color: var(--kolor-tekstu-a);
+  }
+
+  nav {
+    z-index: 33;
+    height: 60px;
+  }
+
+  #div {
+    position: absolute;
+    bottom: 15px;
+    height: 2px;
+    width: 50px;
+    margin: 0 5px;
+    background-color: #fff;
+    transition: transform 0.25s;
+  }
+
+  #logo {
+    width: 30px;
+  }
+
+  .active {
+    background: var(--kolor-tla);
+  }
+
+  #heder {
+    width: 100%;
+    padding: 10% 5%;
+  }
+
+  #sekcja_2 {
+    height: 90vh;
+    padding: 20px 20px;
+  }
+
+  #img {
+    flex: 80%;
+  }
+
+  aside {
+    flex: 40%;
+    padding: 0 60px;
+  }
+
+  #sekcja_3 {
+    all: initial;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .zdj {
+    all: initial;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  #sekcja_4 {
+    padding: 20px;
+  }
+
+  #sekcja_4 .lista {
+    font-size: 120%;
+  }
+
+  .stopka>div>h2 {
+    font-size: 150%;
+    border-left: none;
+  }
+
+  .stopka>div>p {
+    font-size: 120%;
+  }
+
+  .stopka>div>hr {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .stopka>div>p>span {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: small;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    float: right;
+  }
+
+  li {
+    display: inline-flex;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  li:nth-child(1):hover~#div {
+    transform: translateX(0);
+  }
+
+  li:nth-child(2):hover~#div {
+    transform: translateX(65px);
+  }
+
+  li:nth-child(3):hover~#div {
+    transform: translateX(127px);
+  }
+
+  li:nth-child(4):hover~#div {
+    transform: translateX(190px);
+  }
+
+  a {
+    width: 60px;
+    height: 30px;
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: small;
+    color: var(--kolor-tekstu-a);
+  }
+
+  nav {
+    z-index: 33;
+    height: 60px;
+  }
+
+  #div {
+    position: absolute;
+    bottom: 15px;
+    height: 2px;
+    width: 50px;
+    margin: 0 5px;
+    background-color: #fff;
+    transition: transform 0.25s;
+  }
+
+  #logo {
+    width: 30px;
+  }
+
+  .active {
+    background: var(--kolor-tla);
+  }
+
+  #sekcja_1 {
+    background-image: url(bmw-tlo-2.jpg);
+    background-size: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1.3;
+    background-repeat: no-repeat;
+  }
+
+  #heder {
+    width: 100%;
+    padding: 22% 10%;
+  }
+
+  #sekcja_2 {
+    height: 90vh;
+    padding: 20px 20px;
+  }
+
+  #img {
+    flex: 80%;
+  }
+
+  aside {
+    flex: 40%;
+    padding: 0 60px;
+  }
+
+  #sekcja_3 {
+    all: initial;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .zdj {
+    all: initial;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  #sekcja_4 {
+    padding: 20px;
+  }
+
+  #sekcja_4 .lista {
+    font-size: 100%;
+  }
+
+  .stopka>div>h2 {
+    font-size: small;
+    border-left: none;
+  }
+
+  .stopka>div>hr {
+    width: 30px;
+  }
+}
